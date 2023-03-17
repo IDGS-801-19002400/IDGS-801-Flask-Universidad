@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <form action="/editarAlumno" method="post">
+                <div class="form-group">
+                    <label for="idAlumnoED">ID</label>
+                    <input class="form-control" value="{{idAlumno}}"type="text" name="idAlumnoED" readonly>
+                </div>
+
+                <div class="form-group">
+                    <label for="nombreAlumED">Nombre</label>
+                    <input class="form-control" type="text" name="nombreAlumED" value="{{nombreAlum}}">
+                </div>
+                
+                <div class="form-group">
+                    <label for="apellidoAlumED">Apellido</label>
+                    <input class="form-control" type="text" name="apellidoAlumED" value="{{apellidoAlum}}">
+                </div>
+                <div class="form-group">
+                    <label for="correoElecAlumED">Correo Elecronico</label>
+                    <input class="form-control" type="text" name="correoElecAlumED" value="{{correoElecAlum}}">
+                </div>
+                <br>
+                <div class="">
+                    <input type="submit" value="Guardar">
+                </div>
+            </form>
+        </div>
+      </div>
+</body>
+</html>
